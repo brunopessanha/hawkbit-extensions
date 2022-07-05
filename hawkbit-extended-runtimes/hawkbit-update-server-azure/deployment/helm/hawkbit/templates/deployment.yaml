@@ -31,9 +31,9 @@ spec:
             - name: HAWKBIT_SERVER_BUILD_VERSION
               value: "{{ .Values.image.tag }}"
             - name: SPRING_JPA_DATABASE
-              value: "SQL_SERVER"
+              value: "POSTGRESQL"
             - name: SPRING_DATASOURCE_DRIVERCLASSNAME
-              value: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+              value: "org.postgresql.Driver"
             - name: SPRING_CLOUD_BUS_ENABLED
               value: "true"
             - name: SPRING_DATASOURCE_USER
